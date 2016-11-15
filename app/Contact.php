@@ -10,8 +10,9 @@ class Contact extends Model
         'name', 'email', 'address','hutech', 'company', 'phone', 'group_id', 'photo'
     ];
 
-    public function group()
+    public function contacts()
     {
     	return $this->belongsTo('App\Group');
     }
+   
 }
